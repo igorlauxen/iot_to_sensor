@@ -5,49 +5,6 @@
 		<pages>
 			<Page title="{i18n>title}">
 				<content>
-					<l:VerticalLayout
-						width="100%" >
-						<l:content>
-							<Table id="idIoTTable"
-								items="{ 
-									path: 'iot>/entries',
-									sorter: {
-										path: 'date'
-									}
-								}">
-								<headerToolbar>
-									<Toolbar>
-										<Title text="{i18n>sensorTitle}" level="H2"/>
-										<ToolbarSpacer></ToolbarSpacer>
-										<Button tooltip="View Settings" 
-												icon="sap-icon://drop-down-list" 
-												press="handleViewSettingsDialogButtonPressed" />
-									</Toolbar>
-								</headerToolbar>
-								<infoToolbar>
-									<Toolbar
-										id="vsdFilterBar"
-										active="true"
-										visible="false"
-										press="[handleViewSettingsDialogFilterBarPressed, views.control.tableViewSettingsDialog]">
-										<Label id="vsdFilterLabel" text="?" />
-									</Toolbar>
-								</infoToolbar>
-								<columns>
-									<Column><Text text="{i18n>date}" /></Column>
-									<Column><Text text="{i18n>value}" /></Column>
-								</columns>
-								<items>
-									<ColumnListItem>
-										<cells>
-											<Text text="{iot>date}" />
-											<Text text="{iot>heat}" />
-										</cells>
-									</ColumnListItem>
-								</items>
-							</Table>
-						</l:content>
-					</l:VerticalLayout>
 				</content>
 			</Page>
 		</pages>
