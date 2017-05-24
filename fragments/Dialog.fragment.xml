@@ -1,0 +1,23 @@
+<core:FragmentDefinition
+	xmlns="sap.m"
+	xmlns:core="sap.ui.core">
+	<ViewSettingsDialog
+		confirm="handleConfirm">
+		<sortItems>
+			<ViewSettingsItem text="Date" key="date" selected="true" />
+			<ViewSettingsItem text="Value" key="heat" />
+		</sortItems>
+		<filterItems>
+			<ViewSettingsFilterItem
+				text="{i18n>value}"
+				key="heat"
+				multiSelect="false">
+				<items>
+					<ViewSettingsItem text="Less than 10" key="WeightMeasure___LE___10___X" />
+					<ViewSettingsItem text="Between 10 and 20" key="WeightMeasure___BT___10___20" />
+					<ViewSettingsItem text="More Than 20" key="WeightMeasure___GT___20___X" />
+				</items>
+			</ViewSettingsFilterItem>
+		</filterItems>
+	</ViewSettingsDialog>
+</core:FragmentDefinition>
